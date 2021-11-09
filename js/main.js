@@ -1,12 +1,5 @@
-//import {saludo}  from './module.js' 
-//saludo();
-/*
-const $nav =  document.createElement("nav");
-const $title = document.createElement("h1");
-const $html =  document.documentElement;
-
-let yellow = getComputedStyle($html).getPropertyValue("--yellow-color")
-
-$nav.style.backgroundColor(yellow);
-console.log($nav);
-*/
+import hamburguerMenu from "./menu_hamburguesa.js";
+const d = document;  //pasamos el evento y selector.
+d.addEventListener("DOMContentLoaded", (e) => {
+    hamburguerMenu(".panel-btn", ".panel", ".menu a");
+})
