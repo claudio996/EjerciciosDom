@@ -64,7 +64,8 @@ img{
     right: 0;
     width: 100%;
     background-color: var(--second-modal-color);
-    transform: translate(0,100%) ; /*valores negativos en la web significa ir hacia a arriba*/
+    /*transform: translate(0,100%) ; /*valores negativos en la web significa ir hacia a arriba*/
+    visibility: hidden;
     transition: transform .3s ease;
 }
 
@@ -84,6 +85,7 @@ img{
 }
 .panel.is-active{
     transform:translate(0,0);
+    visibility: visible;
 }
 
 .menu {
