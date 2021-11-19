@@ -7,6 +7,7 @@ import darkTheme from "./themeDark.js";
 import responsiveMedia from "./objetoResponsive.js";
 import ResponsiveTester from "./pruebaResponsive.js";
 import userDeviceInfo from "./deteccion_device.js";
+import networkStatus from "./redDetection.js";
 
 const d = document;  //Inicializamos el document html.
 
@@ -30,3 +31,4 @@ d.addEventListener("keydown", e => { // detect keys down left right
 })
 
 darkTheme(".dark-theme-btn", "dark-mode");  // pasamos el selector - 
+networkStatus();

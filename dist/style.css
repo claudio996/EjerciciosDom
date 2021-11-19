@@ -210,3 +210,22 @@ color: var(--main-color);
         background-color: var(--second-color);
         color: var(--main-color)
     }
+
+    /*network status*/
+    .online,
+    .offline{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 1rem;
+        bottom: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+        background-color:rgb(0, 139, 58);
+        text-align: center;
+        color: #ffff;
+    }
+    .offline{
+        background-color: crimson;
+    }
