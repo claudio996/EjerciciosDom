@@ -8,6 +8,8 @@ import responsiveMedia from "./objetoResponsive.js";
 import ResponsiveTester from "./pruebaResponsive.js";
 import userDeviceInfo from "./deteccion_device.js";
 import networkStatus from "./redDetection.js";
+import detectWebCam from "./webCamDetetection.js";
+import getGeolocation from "./geolocation.js";
 
 const d = document;  //Inicializamos el document html.
 
@@ -20,7 +22,10 @@ d.addEventListener("DOMContentLoaded", (e) => { // cargando el document. junto c
     responsiveMedia("youtube", "(min-width:1024px)", `<a href = "https://www.youtube.com/watch?v=FgQR2O8PGf4&ab_channel=TWINENGINE"  target="_blank" rel "noopeer">Ver video</a> `, `<iframe width="560" height="315" src="https://www.youtube.com/embed/FgQR2O8PGf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
     responsiveMedia("gmaps", "(min-width:1024px)", `<a href = "https://goo.gl/maps/jgH2mmn3DbWriN5x7" target="_blank" rel "noopeer">Ver Mapa</a>`,`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.1437545464587!2d-71.66816658474814!3d-35.42646878025449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c6a014abd285%3A0x444443c9367d5a75!2sPlaza%20De%20Armas%20de%20Talca!5e0!3m2!1ses!2scl!4v1637182874153!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`)
     ResponsiveTester("responsive-tester");
-    userDeviceInfo("user-device");
+    userDeviceInfo("user-device"); 
+    detectWebCam("webCam");
+    getGeolocation("geolocation");
+
 })
 
 //teclas

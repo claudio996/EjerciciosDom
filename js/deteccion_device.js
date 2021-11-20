@@ -1,17 +1,19 @@
-const d = document,
-    n = navigator,
-    ua = n.userAgent;
+const d = document, //objeto document
+    n = navigator, // objeto navigator
+    ua = n.userAgent; //alamacenar metodo user.Agent este permite visibilizar la plataforma en la que se encuentra el usuario.
 
-export default function userDeviceInfo(id) {
+export default function userDeviceInfo(id) {//recepcionamos el id enviado en el main.
     const $id = d.getElementById(id),
-        isDesktop = {
-            linux: () => ua.match(/linux/i),//buscar expresion regular para cadena de texto userAgent.
-            mac: () => ua.match(/mac os/i),
+
+        isDesktop = {//objeto desktop-funcion evaluadora.
+            linux: () => ua.match(/linux/i), // como segundo argumento pasamos funcion flecha para buscar expresion regular  buscar en expresion regular para cadena de texto userAgent.
+            mac: () => ua.match(/mac os/i), //match->expresion regular.
             windows: () => ua.match(/windows nt/i),
             any: function () { //funcion anonima. //cualquier so de escritorio
                 return this.linux() || this.mac() || this.windows(); //funcion anonima para hacer referencia a los otros objetos.
             }
         },
+
         isBrowser = {
 
             Chrome: () => ua.match(/Chrome/i),//buscar expresion regular para cadena de texto userAgent.
@@ -35,12 +37,12 @@ export default function userDeviceInfo(id) {
                 return this.android() || this.ios() || this.windowsPhone(); //funcion anonima para hacer referencia a los otros objetos.
             }
         }
-  
 
-   // console.log(ua);
+
+    // console.log(ua);
     $id.innerHTML = `<ul>
     <li>User Agent <b>${ua} </b> </li>
-    <li>Plataforma <b>${isMobile.any()? isMobile.any():isDesktop.any() } </b> </li>
+    <li>Plataforma <b>${isMobile.any() ? isMobile.any() : isDesktop.any()} </b> </li>
     <li> <b>${ua} </b> </li>
     <li>Navegador <b>${isBrowser.any} </b> </li>
     </ul>`
@@ -67,11 +69,14 @@ export default function userDeviceInfo(id) {
 
     if (isDesktop.windows) {
         $id.innerHTML += `<p>Descarga para windows</p>`
-    
+
     }
 
     //redirecciones
     if (isMobile.android()) {
         window.location.href = "https://facebook.com";
     }
+
+    console.log(ua);
+    console.log(n);
 }
