@@ -13,6 +13,7 @@
 </head>
 
 <body data-dark>
+
     <header class="header">
         <h1>Ejercicios del Dom</h1>
     </header>
@@ -34,6 +35,12 @@
             <a href="#seccion7">Detecction device</a>
             <a href="#seccion8">Detection web camera</a>
             <a href="#seccion9">geolocation</a>
+
+            <a href="#seccion10">Filtros de busqueda</a>
+            <a href="#seccion11">User device</a>
+            <a href="#seccion12">Detecction device</a>
+            <a href="#seccion13">Detection web camera</a>
+            <a href="#seccion14">geolocation</a>
 
         </nav>
     </aside>
@@ -102,7 +109,7 @@
 
         <section id="seccion8" class="section">
             <h2>Deteccion camara web</h2>
-            <video id="webCam" ></video>
+            <video id="webCam"></video>
         </section>
 
         <section id="seccion9" class="section">
@@ -110,13 +117,102 @@
             <div id="geolocation"></div>
         </section>
         <section id="seccion10" class="section">
+            <h2>Filtros de busqueda</h2>
+            <input type="search" placeholder="buscar" class="card-filter">
+            <br>
+            <article class="cards">
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/tech" alt="Tech">
+                    <figcaption>Tech</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/animals" alt="animals">
+                    <figcaption>animals</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/people" alt="people">
+                    <figcaption>people</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/Arch" alt="Arch">
+                    <figcaption>Arch</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="https://placeimg.com/200/200/Nature" alt="Nature">
+                    <figcaption>Nature</figcaption>
+                </figure>
+
+            </article>
+        </section>
+
+        <section id="seccion11" class="section">
+            <h2>Sorteo digital</h2>
+            <ul class="players">
+                <li class="player">Javascript</li>
+                <li class="player">PHP</li>
+                <li class="player">JAVA</li>
+                <li class="player">C</li>
+                <li class="player">Python</li>
+                <li class="player">Ruby</li>
+                <li class="player">Go</li>
+                <li class="player">Visual basic</li>
+                <li class="player">Rust</li>
+                <li class="player">Perl</li>
+            </ul>
+
+            <button id="winner-btn">Obtener Ganador</button>
+        </section>
+
+        <section id="seccion12" class="section">
+            <h2>Responsive slider</h2>
+            <div class="slider">
+                <div class="slider-slides">
+                    <div class="slider-slide active">
+                        <img src="https://placeimg.com/200/200/Nature" alt="Nature">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>Diapositiva 2</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, saepe! Placeat, quae? Facere
+                            eos fuga repellat soluta nihil vel. Quia dicta totam, quaerat inventore facilis nam.
+                            Molestiae dolor officia in?</p>
+                    </div>
+                    <div class="slider-slide">
+                        <img src="https://placeimg.com/200/200/Animals" alt="Animals">
+                    </div>
+                    <div class="slider-slide">
+                        <h4>Diapositiva 4</h4>
+
+                    </div>
+                    <div class="slider-btns">
+                        <a class="prev" href="#">&laquo;</a>
+                        <a class="next" href="#">&laquo;</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seccion13" class="section">
+            <h2>Video Inteligente</h2>
+            <video src="dist/assets/video.mp4" muted controls loop data-smart-video></video>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <video src="dist/assets/video.mp4" muted controls loop data-smart-video></video>
+
+        </section>
+        <section id="seccion10" class="section">
+            <h2>Seccion10</h2>
+        </section>
+        <section id="seccion10" class="section">
             <h2>Seccion10</h2>
         </section>
     </main>
+
     <button class="scroll-top-btn hidden">&#11014;</button>
-
     <button class="dark-theme-btn">🌙</button>
-
     <script src="js/main.js" type="module"></script>
 </body>
 
