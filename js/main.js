@@ -15,6 +15,8 @@ import detectWebCam from "./webCamDetetection.js";
 import getGeolocation from "./geolocation.js";
 */
 import smartVideo from "./videoInteligente.js";
+import contactFormValidation from "./validaciones.js";
+import speechReader from "./narrador.js";
 
 const d = document;  //Inicializamos el document html.
 
@@ -36,6 +38,8 @@ d.addEventListener("DOMContentLoaded", (e) => { // cargando el document. junto c
     slider();
     */
    smartVideo();
+   contactFormValidation();
+   
 })
 
 //teclas
@@ -48,3 +52,4 @@ d.addEventListener("keydown", e => { // detect keys down left right
 darkTheme(".dark-theme-btn", "dark-mode");  // pasamos el selector - 
 //networkStatus();
 
+speechReader();// los que contienen los metodos document no se invocan en si mismo.
