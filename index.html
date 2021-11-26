@@ -45,7 +45,7 @@
         </nav>
     </aside>
     <main>
-        <section id="seccion1" class="section">
+        <section class="section">
             <h1>Reloj</h1>
             <div class="container">
                 <div id="clock"> </div>
@@ -53,8 +53,8 @@
                     <button id="active">Activar relog
                         <button id="stop">Desactivar reloj</button>
 
-                        <button id="enable-alarm">Cuenta regresiva</button>
-                        <button id="disabled-alarm">Desactivar alarma</button>
+                    <button id="enable-alarm">Cuenta regresiva</button>
+                    <button id="disabled-alarm">Desactivar alarma</button>
                 </div>
             </div>
         </section>
@@ -176,9 +176,7 @@
                     </div>
                     <div class="slider-slide">
                         <h4>Diapositiva 2</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, saepe! Placeat, quae? Facere
-                            eos fuga repellat soluta nihil vel. Quia dicta totam, quaerat inventore facilis nam.
-                            Molestiae dolor officia in?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, saepe! Placeat, quae? Facere eos fuga repellat soluta nihil vel. Quia dicta totam, quaerat inventore facilis nam. Molestiae dolor officia in?</p>
                     </div>
                     <div class="slider-slide">
                         <img src="https://placeimg.com/200/200/Animals" alt="Animals">
@@ -207,17 +205,14 @@
             <h2>Validaciones del formulario</h2>
             <form class="contact-form" method="post">
                 <legend>Envianos tu informacion </legend>
-                
-                <input type="text" name="name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" placeholder="Escribe tu nombre"
-                    required title="El nombre solo acepta letras y espacios en blanco.">
-                
-                    <input type="email" name="email" 
-                    placeholder="Escribe tu email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+
+                <input type="text" name="name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" placeholder="Escribe tu nombre" required title="El nombre solo acepta letras y espacios en blanco.">
+
+                <input type="email" name="email" placeholder="Escribe tu email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
 
                 <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido">
 
-                <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios"
-                    title="Tu comentario no debe exceder los 255 carcateres" data-pattern="^.{1,255}$" required></textarea>
+                <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" title="Tu comentario no debe exceder los 255 carcateres" data-pattern="^.{1,255}$" required></textarea>
 
                 <input type="submit" value="Enviar">
                 <div class="contact-form-loader none">
@@ -235,7 +230,7 @@
             </select>
             <br><br>
             <textarea id="speech-text" cols="50 rows" rows="5" placeholder="Ingresa texto"></textarea>
-        <button  id="speech-btn">Leer texto</button>
+            <button id="speech-btn">Leer texto</button>
         </section>
     </main>
 

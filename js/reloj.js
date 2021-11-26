@@ -29,14 +29,14 @@ export function alarm(sound, btnEnabled, btnStop) {
                 $alarma.play();
             }, 2000);
             e.target.disabled = true; //disable button enabled clock
-        
-        } if (e.target.matches(btnStop)) {
-           clearTimeout(alarmanTep) //limpiamos la variable que contiene el contador
-           $alarma.pause();
-           $alarma.currentTime = 0;   
-           d.querySelector(btnEnabled).disabled = false; //enable 
+
+        }
+        if (e.target.matches(btnStop)) {
+            clearTimeout(alarmanTep) //limpiamos la variable que contiene el contador
+            $alarma.pause();
+            $alarma.currentTime = 0;
+            d.querySelector(btnEnabled).disabled = false; //enable 
 
         }
     })
 }
-
